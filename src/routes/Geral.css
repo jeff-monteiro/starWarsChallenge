@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   
-  color: #FFE81F;
+  color: #1f93ff;
 }
 
 section.header {
@@ -62,21 +62,21 @@ section.header section.image img {
 }
 
 section.navbar section.link a {
-  background-color: #FFE81F;
+  background-color: #1f93ff;
   color: #000000;
   padding: 14px 25px;
   text-align: center;
   text-decoration: solid;
   display: flex;
-  border-top: 1px solid #FFE81F;
-  border-right: 1px solid #FFE81F;
-  border-bottom: 1px solid #FFE81F;
-  border-left: 1px solid #FFE81F;
+  border-top: 1px solid #1f93ff;
+  border-right: 1px solid #1f93ff;
+  border-bottom: 1px solid #1f93ff;
+  border-left: 1px solid #1f93ff;
   border-radius: 5px;
 }
 
 section.navbar section.link a:hover, a:active {
-  background-color: #CCCC00;
+  background-color: #1f93ff;
 }
 
 main {
@@ -119,7 +119,7 @@ section.cards section.card {
   background: #000000;
   border: 5px solid;
   border-radius: 20px;
-  border-color: #FFE81F;
+  border-color: #1f93ff;
 
   -webkit-box-reflect:below 1px linear-gradient(transparent, transparent, #0004);
     
