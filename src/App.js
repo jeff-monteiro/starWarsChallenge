@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import '../src/routes/Styles.css';
 import Logo from '../src/assets/logo.png'
-import vader from '../src/assets/vader.jpg'
+import darthVader from '../src/assets/darthVader.jpg'
 
 export default function App() {
   return (
@@ -17,22 +17,22 @@ export default function App() {
             <Link to="/" >Home</Link>
           </section>
           <section className="link">
-            <Link to="/filmes">Filmes</Link>
+            <Link to="/filmes">Movies</Link>
           </section>
           <section className="link">
-            <Link to="/personagens">Personagens</Link>
+            <Link to="/personagens">Characters</Link>
           </section>
           <section className="link">
-            <Link to="/planetas">Planetas</Link> 
+            <Link to="/planetas">Planets</Link> 
           </section>
           <section className="link">
-            <Link to="/especies">Especies</Link> 
+            <Link to="/especies">Species</Link> 
           </section>    
         </section>
       </section>
       <main>
         <section className="intro">
-          <img src={vader} alt='Vader'/>
+          <img src={darthVader} alt='darthVader'/>
           <h2>May the Force be with you!</h2>
         </section>
       </main>
