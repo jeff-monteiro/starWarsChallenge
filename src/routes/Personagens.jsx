@@ -65,10 +65,10 @@ export default function Personagens() {
                     <section className="card-in">
                       <h2>{personagens.name}</h2>
                       <br></br>
-                      <h3>Altura: {personagens.height}</h3>
-                      <h3>Cor-Cabelo: {personagens.hair_color}</h3>
-                      <h3>Peso: {personagens.mass}</h3>
-                      <h3>Gênero: {personagens.gender}</h3>
+                      <h3>Height: {personagens.height}</h3>
+                      <h3>Hair-Color: {personagens.hair_color}</h3>
+                      <h3>Weight: {personagens.mass}</h3>
+                      <h3>Gender: {personagens.gender}</h3>
                       <h3>{/* {personagens.films} */}</h3>
                     </section>
                   </section>
