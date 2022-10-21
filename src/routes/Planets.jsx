@@ -4,9 +4,9 @@ import '../styles/Styles.css';
 import Logo from '../assets/logo.png';
 import Loading from "./Loading";
 
-export default function Planetas() {
+export default function Planets() {
    
-    const [planeta, setPlaneta] = useState([]);
+    const [planets, setPlanets] = useState([]);
     const [removeLoading, setRemoveLoading] = useState (false) 
   
     useEffect(() => {
@@ -21,7 +21,7 @@ export default function Planetas() {
           data.results.map((item) => results.push(item));
         }
 
-        setPlaneta(results);
+        setPlanets(results);
         setRemoveLoading(true);
       }
 
@@ -40,16 +40,16 @@ export default function Planetas() {
             <Link to="/">Home</Link>
           </section>
           <section className="link">
-            <Link to="/filmes">Movies</Link>
+            <Link to="/movies">Movies</Link>
           </section>
           <section className="link">
-            <Link to="/personagens">Characters</Link>
+            <Link to="/characters">Characters</Link>
           </section>
           <section className="link">
-            <Link to="/planetas">Planets</Link>
+            <Link to="/planets">Planets</Link>
           </section>
           <section className="link">
-            <Link to="/especies">Species</Link>
+            <Link to="/species">Species</Link>
           </section>
         </section>
       </section>
@@ -59,16 +59,16 @@ export default function Planetas() {
           <h1>Loaded Planets</h1>
         </section>
         <section className="cards">
-          {planeta.map((planeta, i) => {
+          {planets.map((planets, i) => {
             return (
               <section className="card" key={i}>
                 <section className="card-in">
-                  <h2>{planeta.name}</h2>
+                  <h2>{planets.name}</h2>
                   <br></br>
-                  <h3>Climate: {planeta.climate}</h3>
-                  <h3>Diameter: {planeta.diameter}</h3>
-                  <h3>Gravity: {planeta.gravity}</h3>
-                  <h3>Population: {planeta.population}</h3>
+                  <h3>Climate: {planets.climate}</h3>
+                  <h3>Diameter: {planets.diameter}</h3>
+                  <h3>Gravity: {planets.gravity}</h3>
+                  <h3>Population: {planets.population}</h3>
                 </section>
               </section>
             );

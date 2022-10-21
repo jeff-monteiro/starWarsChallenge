@@ -4,30 +4,30 @@ import '../styles/Styles.css';
 import Logo from '../assets/logo.png';
 import Loading from "./Loading";
 
-export default function Filmes() {
-
-    const [filmes, setFilmes] = useState([]); 
+export default function Species() {
+    
+    const [species, setSpecies] = useState([]);
     const [removeLoading, setRemoveLoading] = useState (false)
 
     useEffect(() => {
       async function fetchData() {
         let results = [];
         let data = null;
-        for (var i = 1; i < 2; i++) {
+        for (var i = 1; i < 5; i++) {
           let rep = await fetch(
-            `https://swapi.dev/api/films/?format=json&page=${i}`
+            `https://swapi.dev/api/species/?format=json&page=${i}`
           );
           data = await rep.json();
           data.results.map((item) => results.push(item));
         }
 
-        setFilmes(results);
+        setSpecies(results);
         setRemoveLoading(true);
       }
 
       fetchData();
     }, []);
-
+    
     return (
       <body>
         <section className="header">
@@ -40,34 +40,35 @@ export default function Filmes() {
               <Link to="/">Home</Link>
             </section>
             <section className="link">
-              <Link to="/filmes">Movies</Link>
+              <Link to="/movies">Movies</Link>
             </section>
             <section className="link">
-              <Link to="/personagens">Characters</Link>
+              <Link to="/characters">Characters</Link>
             </section>
             <section className="link">
-              <Link to="/planetas">Planets</Link>
+              <Link to="/planets">Planets</Link>
             </section>
             <section className="link">
-              <Link to="/especies">Species</Link>
+              <Link to="/species">Species</Link>
             </section>
           </section>
         </section>
 
         <main>
           <section className="intro">
-            <h1>Loaded Movies</h1>
+            <h1>Loaded Species</h1>
           </section>
           <section className="cards">
-            {filmes.map((filmes, i) => {
+            {species.map((species, i) => {
               return (
                 <section className="card" key={i}>
                   <section className="card-in">
-                    <h2>{filmes.title}</h2>
+                    <h2>{species.name}</h2>
                     <br></br>
-                    <h3>Director: {filmes.director}</h3>
-                    <h3>Episode: {filmes.episode_id}</h3>
-                    <h3>Realease-Date: {filmes.release_date}</h3>
+                    <h3>Average-Height: {species.average_height}</h3>
+                    <h3>Classification: {species.classification}</h3>
+                    <h3>Designation: {species.designation}</h3>
+                    <h3>Skin-Color: {species.skin_colors}</h3>
                   </section>
                 </section>
               );
@@ -77,6 +78,6 @@ export default function Filmes() {
         </main>
       </body>
     );
-  }
+}
 
   

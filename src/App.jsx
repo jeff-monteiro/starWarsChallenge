@@ -17,16 +17,16 @@ export default function App() {
             <Link to="/" >Home</Link>
           </section>
           <section className="link">
-            <Link to="/filmes">Movies</Link>
+            <Link to="/movies">Movies</Link>
           </section>
           <section className="link">
-            <Link to="/personagens">Characters</Link>
+            <Link to="/characters">Characters</Link>
           </section>
           <section className="link">
-            <Link to="/planetas">Planets</Link> 
+            <Link to="/planets">Planets</Link> 
           </section>
           <section className="link">
-            <Link to="/especies">Species</Link> 
+            <Link to="/species">Species</Link> 
           </section>    
         </section>
       </section>
