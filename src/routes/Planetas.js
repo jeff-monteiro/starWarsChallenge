@@ -7,7 +7,7 @@ import Loading from "./Loading";
 export default function Planetas() {
    
     const [planeta, setPlaneta] = useState([]);
-    const[removeLoading, setRemoveLoading] = useState (false) 
+    const [removeLoading, setRemoveLoading] = useState (false) 
   
     useEffect (() => {
       async function fetchData() {

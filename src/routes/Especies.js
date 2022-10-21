@@ -7,7 +7,7 @@ import Loading from "./Loading";
 export default function Especies() {
     
     const [especies, setEspecies] = useState([]);
-    const[removeLoading, setRemoveLoading] = useState (false)
+    const [removeLoading, setRemoveLoading] = useState (false)
 
     useEffect (() => {
         async function fetchData() {
