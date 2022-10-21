@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import '../src/routes/Geral.css';
+import '../src/routes/Styles.css';
 import Logo from '../src/assets/logo.png'
 import vader from '../src/assets/vader.jpg'
 
