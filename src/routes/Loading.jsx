@@ -1,6 +1,6 @@
 import loading from '../assets/personagens.svg';
 
-import styles from './Loading.module.css';
+import styles from '../styles/Loading.module.css';
 
 function Loading() {
   return (
