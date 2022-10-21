@@ -1,9 +1,5 @@
 import { render } from "react-dom";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import Especies from "../src/routes/Especies"
 import Filmes from "../src/routes/Filmes"
