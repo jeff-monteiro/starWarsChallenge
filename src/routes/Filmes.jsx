@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
-import './Styles.css';
+import '../styles/Styles.css';
 import Logo from '../assets/logo.png';
 import Loading from "./Loading";
 
@@ -65,9 +65,9 @@ export default function Filmes() {
                   <section className="card-in">
                     <h2>{filmes.title}</h2>
                     <br></br>
-                    <h3>Diretor: {filmes.director}</h3>
+                    <h3>Director: {filmes.director}</h3>
                     <h3>Episode: {filmes.episode_id}</h3>
-                    <h3>Lançamento: {filmes.release_date}</h3>
+                    <h3>Realease-Date: {filmes.release_date}</h3>
                   </section>
                 </section>
               );

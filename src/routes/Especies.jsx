@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
-import './Styles.css';
+import '../styles/Styles.css';
 import Logo from '../assets/logo.png';
 import Loading from "./Loading";
 
@@ -65,10 +65,10 @@ export default function Especies() {
                   <section className="card-in">
                     <h2>{especies.name}</h2>
                     <br></br>
-                    <h3>Média-Altura: {especies.average_height}</h3>
-                    <h3>Classificação: {especies.classification}</h3>
-                    <h3>Designação: {especies.designation}</h3>
-                    <h3>Cor-Pele: {especies.skin_colors}</h3>
+                    <h3>Average-Height: {especies.average_height}</h3>
+                    <h3>Classification: {especies.classification}</h3>
+                    <h3>Designation: {especies.designation}</h3>
+                    <h3>Skin-Color: {especies.skin_colors}</h3>
                   </section>
                 </section>
               );

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
-import './Styles.css';
+import '../styles/Styles.css';
 import Logo from '../assets/logo.png';
 import Loading from "./Loading";
 
@@ -65,10 +65,10 @@ export default function Planetas() {
                 <section className="card-in">
                   <h2>{planeta.name}</h2>
                   <br></br>
-                  <h3>Clima: {planeta.climate}</h3>
-                  <h3>Diametro: {planeta.diameter}</h3>
-                  <h3>Gravidade: {planeta.gravity}</h3>
-                  <h3>População: {planeta.population}</h3>
+                  <h3>Climate: {planeta.climate}</h3>
+                  <h3>Diameter: {planeta.diameter}</h3>
+                  <h3>Gravity: {planeta.gravity}</h3>
+                  <h3>Population: {planeta.population}</h3>
                 </section>
               </section>
             );
